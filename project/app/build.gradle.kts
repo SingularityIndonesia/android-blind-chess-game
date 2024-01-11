@@ -1,6 +1,6 @@
 plugins {
     id("AppConventionV1")
-    id("FeatureAppJetpackCompose")
+    id("FeatureJetpackCompose")
 }
 
 android {

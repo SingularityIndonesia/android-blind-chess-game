@@ -29,17 +29,9 @@ gradlePlugin {
             id = "LibraryConventionV1"
             implementationClass = "com.singularityindonesia.convention.LibraryConventionV1"
         }
-        register("FeatureAppJetpackCompose") {
-            id = "FeatureAppJetpackCompose"
-            implementationClass = "com.singularityindonesia.convention.features.FeatureAppJetpackCompose"
-        }
         register("FeatureJetpackCompose") {
             id = "FeatureJetpackCompose"
             implementationClass = "com.singularityindonesia.convention.features.FeatureJetpackCompose"
-        }
-        register("FeatureAppContextReceiver") {
-            id = "FeatureAppContextReceiver"
-            implementationClass = "com.singularityindonesia.convention.features.FeatureAppContextReceiver"
         }
         register("FeatureContextReceiver") {
             id = "FeatureContextReceiver"
