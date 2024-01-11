@@ -1,5 +1,7 @@
 package com.singularityindonesia.convention.features
 
+import com.android.build.api.dsl.ApplicationExtension
+import com.android.build.api.dsl.CommonExtension
 import com.android.build.api.dsl.LibraryExtension
 import org.gradle.api.Plugin
 import org.gradle.api.Project
@@ -11,8 +13,14 @@ class FeatureJetpackCompose : Plugin<Project> {
 
     override fun apply(target: Project) {
         with(target) {
+            setupExtension<ApplicationExtension>()
+            setupExtension<LibraryExtension>()
+        }
+    }
 
-            extensions.configure<LibraryExtension> {
+    private inline fun <reified T : CommonExtension<*, *, *, *, *>> Project.setupExtension() {
+        runCatching {
+            extensions.configure<T> {
                 buildFeatures {
                     compose = true
                 }
