@@ -33,9 +33,6 @@ Commit message must satisfy rules in the conventional commit v1.0.0.
       - change the nuclear button with smile emoji.
     ```
 - **Accepted types**: `feat`, `proj-feat`(for project feature), `fix`, `proj-fix`(for project bug), `BREAKING CHANGE`, `proj-BREAKING CHANGE`(for project changes), `docs`
-- **Scoping Rule**. For type `feat` and `fix` you must include the scope;
-  While for BREAKING CHANGE scope is not a must (but if it has a scope it's a must).
-  e.g: `feat(login): init.`, `feat(login): add login screen.`, `proj-BREAKING CHANGE(refactor arch): delete buildSrc.`.
 - **One sentence message**. Message can only contain 1 sentence or phrase.
 - **Commit Contains Side Effects**. If for some reason a commit has side effects, or in the same commit you are doing something out of the scope that you are working on,
   you must add `ALSO` footer and put `!` (exclamation mark) in front. 
