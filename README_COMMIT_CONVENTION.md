@@ -62,7 +62,7 @@ Commit message must satisfy rules in the conventional commit v1.0.0.
     ```
     
 # COMMIT STRATEGY
-- **Prefers directory based**. Since now directory represent layers, we prefer committing changes by directories.
+- **Prefer directory based**. Since directory represent layers, we prefer committing changes by directories.
 
   ![commit by dir](docs/img/img1.png)
 
