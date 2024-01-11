@@ -1,0 +1,38 @@
+[versions]
+activity-compose = "1.8.2"
+androidx-junit = "1.1.5"
+core-ktx = "1.12.0"
+espresso-core = "3.5.1"
+junit = "4.13.2"
+lifecycle-runtime-ktx = "2.6.2"
+material3-android = "1.2.0-beta02"
+navigationcompose = "2.7.6"
+ui-android = "1.5.4"
+agp = "8.2.1"
+kotlin = "1.9.0"
+android-application="8.2.1"
+appcompat = "1.6.1"
+material = "1.11.0"
+
+[libraries]
+activity-compose = { module = "androidx.activity:activity-compose", version.ref = "activity-compose" }
+core-ktx = { module = "androidx.core:core-ktx", version.ref = "core-ktx" }
+espresso-core = { module = "androidx.test.espresso:espresso-core", version.ref = "espresso-core" }
+ext-junit = { module = "androidx.test.ext:junit", version.ref = "androidx-junit" }
+junit = { module = "junit:junit", version.ref = "junit" }
+lifecycle-runtime-ktx = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycle-runtime-ktx" }
+material3-android = { module = "androidx.compose.material3:material3-android", version.ref = "material3-android" }
+navigationcompose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigationcompose" }
+ui-android = { module = "androidx.compose.ui:ui-android", version.ref = "ui-android" }
+ui-graphics-android = { module = "androidx.compose.ui:ui-graphics-android", version.ref = "ui-android" }
+ui-test-junit4 = { module = "androidx.compose.ui:ui-test-junit4", version.ref = "ui-android" }
+ui-test-manifest = { module = "androidx.compose.ui:ui-test-manifest", version.ref = "ui-android" }
+ui-tooling = { module = "androidx.compose.ui:ui-tooling", version.ref = "ui-android" }
+ui-tooling-preview-android = { module = "androidx.compose.ui:ui-tooling-preview-android", version.ref = "ui-android" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+
+[plugins]
+androidLibrary = { id = "com.android.library", version.ref = "agp" }
+kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+androidApplication = { id = "com.android.application", version.ref = "agp" }
